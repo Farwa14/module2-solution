@@ -1,1 +1,61 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for Sections */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Food Section Styles */
+.food-section {
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.food-section .section-title {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+}
+
+.food-section p {
+    margin-top: 40px; /* to push text below the section title */
+}
+
+/* Responsive Layout */
+@media (min-width: 992px) {
+    .food-section {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .food-section {
+        width: 45%;
+    }
+    .food-section:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .food-section {
+        width: 100%;
+    }
+}
 
